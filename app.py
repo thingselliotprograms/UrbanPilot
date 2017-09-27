@@ -118,7 +118,12 @@ def rank_locations():
         db.session.commit()
 
 
-    return make_response("OK",200)
+    return make_response("OK",202)
+
+@app.route('/distancecalc', methods=['POST'])
+def calculate_distances():
+    print (request.form.get('zip'))
+    return make_response("Ok", 200)
 
 
 if __name__ == '__main__':
