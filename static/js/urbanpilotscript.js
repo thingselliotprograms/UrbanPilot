@@ -40,45 +40,6 @@ $(document).ready(function () {
 
                 })
 
-                /*
-                $.post("/signup", {
-                    fname: $('#fname').val(),
-                    mname: $('#mname').val(),
-                    lname: $('#lname').val(),
-                    zip: $('#zip').val(),
-                    email: $('#email').val()
-                }, function (data) {
-                    console.log(data)
-                    if (status == 500) {
-                        alert("That email is already taken, sorry :(")
-                    }
-                    console.log(data)
-                    console.log(status)
-                })
-                */
-
-            }
-
-            /*
-
-            if (fnameval == "" || lnameval == "" || zipval == "" || emailval == "") {
-                alert("Please fill in all required fields")
-            }
-            else if (!Number.isInteger(Number(zipval))) {
-                alert("Please enter a valid zipcode")
-            
-            }
-            else {
-                $.getJSON("/infosubmission", {
-                    fname: $('#fname').val(),
-                    mname: $('#mname').val(),
-                    lname: $('#lname').val(),
-                    zip: $('#zip').val(),
-                    email: $('#email').val()
-                })
-            }
-            */
-
             event.preventDefault();
             
         })
